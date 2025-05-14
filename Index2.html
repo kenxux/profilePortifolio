@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wawire Ngao Kevin - CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .section-heading {
+            margin-top: 30px;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .contact-info, .portfolio, .social-media {
+            margin-top: 20px;
+        }
+
+        .contact-info p, .portfolio p, .social-media p {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+
+<body>
+<!-- RED CODE START: Responsive navbar with hamburger and profile picture -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <img src="https://github.com/kenxux/profilePortifolio/blob/main/images/ngao2.jpg" alt="Profile Picture" class="rounded-circle me-2">
+                <span class="fw-bold">Wawire Ngao Kevin</span>
+            </div>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#personal">Personal Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Work Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#social">Social Media</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- RED CODE END -->
+    
+<h2>
+        <span id="typing-text" style="border-right: 2px solid black;"></span>
+        <a id="cv-link" href="https://github.com/kenxux/profilePortifolio/blob/main/images/Cv.pdf" download
+           style="display: none; margin-left: 15px; color: blue; font-size: 24px; text-decoration: none;">
+            <i class="fas fa-circle-down"></i>
+        </a>
+    </h2>
+
+    <script>
+        const text = "Have this Wawire Ngao Kevin CV in PDF form";
+        const typingElement = document.getElementById("typing-text");
+        const cvLink = document.getElementById("cv-link");
+        let index = 0;
+        let direction = "forward";
+
+        function typeText() {
+            if (direction === "forward") {
+                typingElement.textContent = text.substring(0, index++);
+                if (index > text.length) {
+                    direction = "backward";
+                    cvLink.style.display = "inline"; // Show link when fully typed
+                    setTimeout(typeText, 1500); // pause before deleting
+                    return;
+                }
+            } else {
+                typingElement.textContent = text.substring(0, index--);
+                cvLink.style.display = "none"; // Hide link while deleting
+                if (index < 0) {
+                    direction = "forward";
+                }
+            }
+            setTimeout(typeText, 100);
+        }
+
+        typeText();
+    </script>
+
+
+    <div class="container">
+       <section id="personal">
+           <h2 class="section-heading">personal Information</h2>
+            <p<p><strong>Name:</strong> Wawire Ngao Kevin</p>
+<p><strong>Email:</strong> <a style="color: black; text-decoration: none;" href="mailto:kenxuxakungwi@gmail.com">kenxuxakungwi@gmail.com</a></p>
+<p><strong>Phone:</strong> 0748057448</p>
+<p><strong>Age:</strong> 23 | <strong>Born:</strong> June 1, 2001</p>
+<p><strong>State of Origin:</strong> Kakamega</p>
+<p><strong>State of Residence:</strong> Thika</p>
+
+        </section>
+
+      <section id="summary">
+            <h2 class="section-heading">Summary</h2>
+            <p>A Bachelor of Science holder in Mathematics and Computer Science, with 5 years of experience in ICT, web development, health administration, security, cleaning, hotel, and retail services. I specialize in creating portfolio websites, personal websites, e-commerce platforms, and custom systems. My roles have included IT Consultant, Network/HMIS Administrator, and receptionist at KCR-Hospital. I also possess skills in security, cleaning, and retail, including customer service and inventory management.</p>
+        </section>
+
+       <section id="Work">
+            <h2 class="section-heading">Work Experience</h2>
+            <div>
+                <h3>IT Consultant</h3>
+                <p><strong>Kerugoya County Referral Hospital (Kirinyaga)</strong><br>April 2024 - August 2024</p>
+                <ul>
+                    <li>Provided IT support, managed system maintenance, and resolved technical issues.</li>
+                    <li>Installed, configured, and updated operating systems and hospital applications.</li>
+                    <li>Monitored and maintained the hospital's LAN and internet connectivity.</li>
+                    <li>Ensured system backups and digital data integrity protocols were followed.</li>
+                    <li>Resolved printer and network issues across departments.</li>
+                    <li>Participated in inventory management of ICT hardware and peripherals.</li>
+                </ul>
+
+                <h3>Network Administrator</h3>
+                <p><strong>Kerugoya County Referral Hospital (Kirinyaga)</strong><br>April 2024 - September 2024</p>
+                <ul>
+                    <li>Managed hospital network infrastructure, ensuring stable connectivity.</li>
+                    <li>Configured routers and handled network troubleshooting.</li>
+                </ul>
+
+                <h3>HMIS Administrator</h3>
+                <p><strong>Kerugoya County Referral Hospital (Kirinyaga)</strong><br>April 2024 - September 2024</p>
+                <ul>
+                    <li>Managed Health Management Information Systems and maintained accurate digital health records.</li>
+                    <li>Supported data reporting tools and provided technical assistance for digital patient records.</li>
+                    <li>Contributed to the Health Digitization Initiative, assisting in the integration of data from other facilities.</li>
+                </ul>
+
+                <h3>Receptionist/Front Desk Officer</h3>
+                <p><strong>Kerugoya County Referral Hospital (Kirinyaga)</strong><br>April 2024 - September 2024</p>
+                <ul>
+                    <li>Managed digital reception services, handled patient data entry, appointment scheduling, and front-desk ICT operations.</li>
+                </ul>
+
+                <h3>Web & Systems Developer (Freelance)</h3>
+                <p><strong>Self-employed</strong><br>September 2021 - Present</p>
+                <ul>
+                    <li>Design and develop portfolio websites, personal websites, e-commerce platforms, and custom systems for clients at affordable rates.</li>
+                </ul>
+
+                <h3>Security Personnel</h3>
+                <p><strong>Royal Security</strong><br>April 2023 - August 2023</p>
+                <ul>
+                    <li>Provided security services at ABSA Bank, including access control and visitor verification.</li>
+                    <li>Reported incidents, maintained discipline, and ensured compliance with security protocols.</li>
+                    <li>Built rapport with clients and staff to ensure a secure environment.</li>
+                </ul>
+
+                <h3>Cleaning/Steward Services</h3>
+                <p><strong>Kirinyaga University</strong><br>October 2021 - March 2022</p>
+                <ul>
+                    <li>Collaborated with team members to perform general cleaning, waste management, and maintained hygiene in residential and office areas.</li>
+                </ul>
+
+                <h3>Supermarket Attendant</h3>
+                <p><strong>Naivas Supermarket (Nairobi South B)</strong><br>December 2016 - February 2017</p>
+                <ul>
+                    <li>Managed inventory, restocked shelves, supported customer service, operated tills, and maintained store cleanliness.</li>
+                    <li>Used POS systems for financial transactions.</li>
+                </ul>
+
+                <h3>Hotel Attendant</h3>
+                <p><strong>Private Hotel Nairobi (South B)</strong><br>April 2021 - August 2021</p>
+                <ul>
+                    <li>Served meals, maintained cleanliness, handled customer orders, and ensured a welcoming environment for guests.</li>
+                </ul>
+            </div>
+        </section>
+
+       <section id="education">
+            <h2 class="section-heading">Education</h2>
+            <p><strong>Kirinyaga University</strong><br>Bachelor of Science - B.Sc, Mathematics and Computer Science, 2021 – 2025 (Second Class Upper)</p>
+            <p><strong>Fr. Kemper Sisokhe Secondary School</strong><br>2017 – 2020</p>
+            <p><strong>St. Patrick Sisokhe Primary School</strong><br>2008 – 2016</p>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-heading">Skills</h2>
+            <ul>
+                <li>Teamwork</li>
+                <li>Excellent Communication Skills</li>
+                <li>Customer Service</li>
+                <li>Data Entry</li>
+                <li>Operating System Installation</li>
+                <li>Retail Management</li>
+                <li>Front Office Management</li>
+                <li>Computer Networking</li>
+                <li>Web Design and Development</li>
+                <li>Receptionist</li>
+                <li>Inventory Management</li>
+                <li>Administrative Assistance</li>
+                <li>System Maintenance</li>
+            </ul>
+        </section>
+
+      <section id="certifications">
+            <h2 class="section-heading">Certifications</h2>
+            <p><strong>UNESCO Club Certificate of Membership</strong><br>UNESCO Associated Schools Network (ASPnet) – Kenya<br>Issued April 2025<br>Credential ID: UNESCO-KEN-CLUB-2025-0037</p>
+        </section>
+
+      <section id="portfolio" class="portfolio">
+    <h2 class="section-heading">Portfolio Links</h2>
+    <ul>
+        <li>
+            <a href="https://github.com/kenxux" target="_blank" style="text-decoration: none; color: black;">
+                GitHub
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/wawire-ngao-kevin-99250b224" target="_blank" style="text-decoration: none; color: black;">
+                LinkedIn
+            </a>
+        </li>
+    </ul>
+</section>
+
+
+      <section id="social" class="social-media">
+    <h2 class="section-heading">Social Media</h2>
+    <ul>
+        <li>
+            
+            <a href="https://www.facebook.com/profile.php?id=61567492424339" target="_blank" style="color: black; text-decoration: none;">
+                <i class="fab fa-facebook-f"></i> <strong>Facebook:</strong> Wawire Ngao Kevin
+            </a>
+        </li>
+        <li>
+            
+            <a href="https://www.instagram.com/kenxuxakungwi/" target="_blank" style="color: black; text-decoration: none;">
+                <i class="fab fa-instagram"></i> <strong>Instagram:</strong> Rt.Hon.Dr.Ngao Kevin EGH
+            </a>
+        </li>
+        <li>
+            
+            <a href="https://twitter.com/NgaoWawire" target="_blank" style="color: black; text-decoration: none;">
+                <i class="fab fa-twitter"> </i><strong>Twitter:</strong> Rt.Hon.Dr.Ngao Kevin EGH
+            </a>
+        </li>
+        <li>
+            <a href="https://wa.me/254748057448?text=Thank%20you%20for%20choosing%20to%20contact%20the%20Rt.Hon.Dr.Ngao%20Kevin." target="_blank" style="color: black; text-decoration: none;">
+                <i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +254748057448
+            </a>
+        </li>
+        <li>
+            
+            <a href="tel:+254748057448" style="color: black; text-decoration: none" href="tel:+254731726003" style="color: black; text-decoration: none;">
+                <i class="fas fa-phone-alt"></i> <strong>Call:</strong> +254 748 057 448/+254731726003
+            </a>
+        </li>
+        <li>
+            
+            <a href="sms:+254748057448?body=Hello%20Rt.Hon.Dr.Ngao%20Kevin" style="color: black; text-decoration: none;">
+                <i class="fas fa-sms"></i> <strong>SMS:</strong> Send SMS
+            </a>
+        </li>
+        <li>
+            
+            <a href="mailto:kenxuxakungwi@gmail.com" style="color: black; text-decoration: none;">
+                <i class="fas fa-envelope"></i> <strong>Email:</strong>kenxuxakungwi@gmail.com
+            </a>
+        </li>
+    </ul>
+</section>
+
+        <footer class="footer">
+            <p>&copy; 2025 Wawire Ngao Kevin. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
