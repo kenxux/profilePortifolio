@@ -461,3 +461,148 @@ a{
   margin-left: 5px; /* Add space between button and count */
   color: orangered;
 }
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+nav {
+  background-color: #333;
+}
+
+.nav-bar {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.nav-bar li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+.home-page, .about-page, .activity, #contact, #info-bar, #form-bar, footer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Flexbox for what-i-do section */
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.holder > div {
+  flex: 1 1 300px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Contact and Info */
+.contact-info, .more-details {
+  background-color: #e7e7e7;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Form styling */
+#myForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+#myForm input,
+#myForm textarea {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+#myForm button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Comment section */
+#comment-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#comment-input {
+  width: 80%;
+  padding: 10px;
+}
+
+#comment-btn,
+#show-comments-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .holder {
+    flex-direction: column;
+  }
+
+  .home-page .heading,
+  .about-page .container-about,
+  .activity .what-i-do-container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #myForm textarea {
+    cols: 30;
+  }
+
+  #comment-input {
+    width: 95%;
+  }
+
+  .nav-bar li a {
+    padding: 10px;
+  }
+  }
+  
