@@ -116,7 +116,23 @@
             <p<p><strong>Name:</strong> Wawire Ngao Kevin</p>
 <p><strong>Email:</strong> <a style="color: black; text-decoration: none;" href="mailto:kenxuxakungwi@gmail.com">kenxuxakungwi@gmail.com</a></p>
 <p><strong>Phone:</strong> 0748057448</p>
-<p><strong>Age:</strong> 23 |
+<p><strong>Age:</strong> <span id="age"></span></p>
+
+<script>
+  function calculateAge(dob) {
+    const birthDate = new Date(dob);
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  }
+
+  document.getElementById("age").textContent = calculateAge("2001-06-01");
+</script>
     <a href="https://portfolio-passfor-certificate-verification-cmhfgjhtg6crezez.southafricanorth-01.azurewebsites.net/index.php?type=birth" target="_blank">
         <button style="color: brown;background-color: white;font-weight:bold;border:none">    
        <strong>Born:</strong> June 1, 2001 </button>
