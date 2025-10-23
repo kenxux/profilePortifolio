@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WAWIRE NGAO KEVIN — CV</title>
+
+  <!-- Bootstrap & Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* Base reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    nav.navbar {
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      border: 1px solid rgba(0,0,0,0.06);
+      margin-bottom: 20px;
+    }
+
+    .profile-img {
+      width: 75px;
+      height: 75px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid rgba(0,0,0,0.06);
+    }
+
+    .nav-link { color: orange !important; font-weight: bold; }
+
+    .section-heading {
+      margin-top: 24px;
+      margin-bottom: 12px;
+      color: #007bff;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .job, .education-item, .referee {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+
+    .lead { color: #444; margin-bottom: 12px; }
+
+    ul.plain { list-style: none; padding-left: 0; margin: 0; }
+    ul li { margin-bottom: 6px; }
+
+    footer.footer {
+      margin-top: 26px;
+      text-align: center;
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+
+    #typing-text { border-right: 2px solid purple; font-weight: 700; }
+
+    @media (max-width: 576px) {
+      #typing-text { font-size: .95rem; }
+      .profile-img { width: 60px; height: 60px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center">
+        <!-- Replace with your image path or URL -->
+        <img src="images/ngao2.jpg" alt="Wawire Ngao Kevin" class="profile-img me-2">
+        <span class="fw-bold">WAWIRE NGAO KEVIN — DIGITAL CV</span>
+      </div>
+
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#personal">Personal</a></li>
+          <li class="nav-item"><a class="nav-link" href="#summary">Summary</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#referees">Referees</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Typing header with optional PDF download button -->
+  <h2 class="mb-3">
+    <span id="typing-text" aria-hidden="true"></span>
+    <a id="cv-download" href="images/WAWIRE_NGAO_KEVIN_CV_.pdf" download style="display:none; margin-left:12px; color:#0b5cff; text-decoration:none;">
+      <i class="fas fa-circle-down"></i> Download PDF
+    </a>
+  </h2>
+
+  <div class="container-lg px-0">
+    <!-- PERSONAL -->
+    <section id="personal" class="mb-3">
+      <h3 class="section-heading">Personal Information</h3>
+      <p><strong>Name:</strong> WAWIRE NGAO KEVIN</p>
+      <p><strong>Email:</strong> <a href="mailto:kenxuxakungwi@gmail.com" style="color:inherit; text-decoration:none;">kenxuxakungwi@gmail.com</a></p>
+      <p><strong>Address:</strong> P.O. Box 10129-00100</p>
+      <p><strong>Residence:</strong> Kawangware, Nairobi</p>
+      <p><strong>Phone:</strong> <a href="tel:+254748057448" style="color:inherit; text-decoration:none;">0748 057 448</a></p>
+      <p>
+        <strong>Date of Birth:</strong> 1 June 2001
+        <span style="margin-left:12px;"><strong>Age:</strong> <span id="age"></span></span>
+      </p>
+    </section>
+
+    <!-- SUMMARY -->
+    <section id="summary" class="mb-3">
+      <h3 class="section-heading">Professional Summary</h3>
+      <p class="lead">Recent graduate with a Bachelor of Science in Mathematics &amp; Computer Science from Kirinyaga University. Possess over 5 years of experience across ICT, web development, health administration, teaching, and customer-facing roles. Demonstrated skills in digital record systems, document indexing, inventory tracking, and front-office operations. Eager to apply these competencies in the Records Management Assistant II role at the Ethics and Anti-Corruption Commission.</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="mb-3">
+      <h3 class="section-heading">Professional Experience</h3>
+
+      <div class="job" aria-labelledby="role-freelance">
+        <h4 id="role-freelance">Freelance Web &amp; Systems Developer</h4>
+        <p><strong>September 2022 – Present</strong></p>
+        <ul class="plain">
+          <li>Designed and developed portfolio websites, e-commerce platforms, and custom systems for clients.</li>
+          <li>Created and maintained searchable document/data repositories, including digital indexing and retrieval mechanisms.</li>
+          <li>Managed version control and secure digital archives of client files and system logs.</li>
+          <li>Supported backup and transfer of archived records to secure storage.</li>
+        </ul>
+      </div>
+
+      <div class="job" aria-labelledby="role-kcrh">
+        <h4 id="role-kcrh">IT Consultant / Network Administrator / HMIS Administrator / Receptionist / Front Desk Officer</h4>
+        <p><strong>Kerugoya County Referral Hospital, Kirinyaga — May 2024 – August 2024</strong></p>
+        <ul class="plain">
+          <li>Assisted with receipt, registration, opening, and routing of digital and paper documents to appropriate hospital departments.</li>
+          <li>Supported classification, filing, referencing, and cross-referencing of digital health records and departmental documents for efficient retrieval.</li>
+          <li>Compiled file movement registers, inventory logs, and tracked transfer of digital and physical records to storage locations.</li>
+          <li>Processed, scanned, and indexed incoming patient- and department-related records, maintaining searchable inventories.</li>
+          <li>Transferred archived records and ensured secure storage in designated areas; verified movement of records across departments.</li>
+          <li>Performed front-desk and clerical tasks: data entry, updating registers, logging document movement, and coordinating reception of mails and records.</li>
+        </ul>
+      </div>
+
+      <div class="job" aria-labelledby="role-hotel">
+        <h4 id="role-hotel">Hotel Operator</h4>
+        <p><strong>Brilliant Safari (Galana Plaza, Nairobi) — June 2025 – August 2025</strong></p>
+        <ul class="plain">
+          <li>Coordinated with multiple hotel branches to confirm room availability, managed reservation documentation, and maintained booking logs.</li>
+          <li>Handled reservation cancellations and modifications; updated wait-lists and recorded changes to ensure accurate records.</li>
+          <li>Responded to hotel inquiries and emails regarding reservations and client itineraries; logged communications and tracked correspondence.</li>
+          <li>Prepared and maintained business and reservation reports; compiled data and filed reports for management review.</li>
+        </ul>
+      </div>
+
+      <div class="job" aria-labelledby="role-peer">
+        <h4 id="role-peer">Peer Teacher &amp; Group Leader</h4>
+        <p><strong>Kirinyaga University — October 2021 – April 2025</strong></p>
+        <ul class="plain">
+          <li>Guided classmates in Mathematics &amp; Computer Science; organized group study schedules, delegated tasks, and tracked group performance documentation.</li>
+          <li>Managed learning document registers, maintained records of group attendance, assignments, and feedback.</li>
+          <li>Supported transfer and archiving of student work and group project records for academic reference.</li>
+        </ul>
+      </div>
+
+      <div class="job" aria-labelledby="role-volunteer">
+        <h4 id="role-volunteer">Volunteer Math &amp; Computer Studies Teacher</h4>
+        <p><strong>Fr. Kemper Sisokhe Secondary, Kakamega — April 2021 – June 2021</strong></p>
+        <ul class="plain">
+          <li>Taught Mathematics and Computer Studies; prepared lesson plans and class materials and maintained student progress records.</li>
+          <li>Organized and archived assignments, tests, and student work; managed retrieval and referencing of past papers for student revision.</li>
+        </ul>
+      </div>
+
+      <div class="job" aria-labelledby="role-supermarket">
+        <h4 id="role-supermarket">Supermarket Attendant</h4>
+        <p><strong>Naivas Supermarket, Nairobi South B — December 2016 – February 2017</strong></p>
+        <ul class="plain">
+          <li>Handled inventory logs, restocked shelves, supported customer service, operated tills, and maintained store records of sales and customer data.</li>
+          <li>Assisted with documentation and filing of transactional data and inventory audits.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="mb-3">
+      <h3 class="section-heading">Education</h3>
+
+      <div class="education-item">
+        <strong>Bachelor of Science in Mathematics &amp; Computer Science</strong><br>
+        Kirinyaga University — Graduated: October 2025
+      </div>
+
+      <div class="education-item">
+        <strong>Kenya Certificate of Secondary Education (KCSE)</strong><br>
+        Fr. Kemper Sisokhe Secondary School — 2017 – 2020<br>
+        Mean Grade: B-
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mb-3">
+      <h3 class="section-heading">Key Skills</h3>
+      <ul class="plain">
+        <li><strong>Digital Records &amp; Information Systems:</strong> Data entry, scanning, indexing, maintaining searchable inventories.</li>
+        <li><strong>Document Management:</strong> Classification, filing, referencing, cross-referencing, retrieval.</li>
+        <li><strong>File Movement Tracking:</strong> Compiling file movement registers and inventory logs.</li>
+        <li><strong>Computer Applications:</strong> MS Office, database systems, web/system development.</li>
+        <li><strong>IT Support:</strong> System &amp; network maintenance, troubleshooting, user assistance.</li>
+        <li><strong>Communication &amp; Organization:</strong> Strong interpersonal skills, attention to detail, time management.</li>
+      </ul>
+    </section>
+
+    <!-- REFEREES -->
+    <section id="referees" class="mb-3">
+      <h3 class="section-heading">Referees</h3>
+
+      <div class="referee">
+        <strong>Dr. Peter Wanjohi</strong><br>
+        Lecturer / Dean, Kirinyaga University<br>
+        Phone: +254 722 322 787<br>
+        Email: <a href="mailto:pnjori@kyu.ac.ke">pnjori@kyu.ac.ke</a>
+      </div>
+
+      <div class="referee">
+        <strong>Mr. Corinellius Makero</strong><br>
+        Teacher<br>
+        Phone: 0714 353 750<br>
+        Email: <a href="mailto:corinelliusmakero@gmail.com">corinelliusmakero@gmail.com</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 WAWIRE NGAO KEVIN — All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    /* Typing animation for header and show download link once typed */
+    (function(){
+      const text = "Downloadable CV available (PDF)";
+      const el = document.getElementById('typing-text');
+      const cvLink = document.getElementById('cv-download');
+      let i = 0, forward = true;
+
+      function tick(){
+        if(forward){
+          el.textContent = text.slice(0, i++);
+          if(i > text.length){
+            forward = false;
+            cvLink.style.display = 'inline';
+            setTimeout(tick, 1200);
+            return;
+          }
+        } else {
+          el.textContent = text.slice(0, i--);
+          cvLink.style.display = 'none';
+          if(i < 0) forward = true;
+        }
+        setTimeout(tick, 80);
+      }
+      tick();
+    })();
+
+    /* Age calculation from DOB */
+    (function(){
+      function ageFromDOB(dobString){
+        const dob = new Date(dobString);
+        const today = new Date();
+        let age = today.getFullYear() - dob.getFullYear();
+        const m = today.getMonth() - dob.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) age--;
+        return age;
+      }
+      document.getElementById('age').textContent = ageFromDOB('2001-06-01');
+    })();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
